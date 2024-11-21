@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nerko+One&display=swap');
+
+
+
+.container {
+    width: min(100%, 1440px);
+    margin: auto;
+    padding-top: 98px;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: inherit;
+    max-width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #012426;
+    border-bottom: 2px solid #05BCCA;
+    padding: 16px 94px;
+
+
+
+}
+
+.burger,
+.xmark {
+    display: none;
+}
+
+.headerNavList {
+
+    display: flex;
+    gap: 72px;
+}
+
+
+
+
+
+.headerNavLink {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #A1C3C9;
+    font-family: "Inter", serif;
+
+
+}
+
+.headerSectionButton {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #05BCCA;
+    border-radius: 8px;
+    cursor: pointer;
+
+
+}
+
+.buttonsSection {
+    display: flex;
+    gap: 32px;
+}
+
+.secondButton {
+    background-color: #05BCCA;
+    border: none;
+    cursor: pointer;
+}
+
+/* homeSection1 */
+
+.homeCover {
+    height: 560px;
+    background-image: url(../images/cover\ \(4\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.coverInternalSection {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.coverSectionTitle {
+    font-family: "Inter", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #FFFFFF;
+
+}
+
+.h2Span {
+    color: #05BCCA;
+}
+
+.coverButton {
+    width: 36px;
+    height: 24px;
+    background-color: #C46A2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+}
+
+/* section2 */
+
+.homeSection2 {
+    background-color: #1A1A1A;
+    padding: 96px 94px;
+
+
+}
+
+.homeSection2Title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #05BCCA;
+    position: relative;
+
+
+
+}
+
+
+.homeSection2Title::before {
+    content: "";
+    width: 187px;
+    position: absolute;
+    border: 2px solid #05BCCA;
+    bottom: -8px;
+    left: 10px;
+}
+
+.section2Div {
+    display: flex;
+    justify-content: center;
+}
+
+.cardSection {
+    margin-top: 64px;
+    display: flex;
+    gap: 20px;
+}
+
+.articleImage {
+    width: 100%;
+    height: 221px;
+    object-fit: cover;
+}
+
+.sectionArticle {
+    padding: 8px 8px 15px 8px;
+    background-color: #2C4246;
+    width: 298px;
+}
+
+.articleTitle {
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #D9D9D9;
+    margin-block: 16px;
+
+
+}
+
+.articlePriceAndADD {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.articlePrice {
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #05BCCA;
+
+
+}
+
+.articleButton {
+    width: 58px;
+    height: 28px;
+    border: none;
+    border-radius: 4px;
+    background-color: #C46A2B;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+
+
+
+
+}

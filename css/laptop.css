@@ -1,0 +1,29 @@
+/* 1439px - 769px */
+
+@media(max-width:1181px) {
+
+    /* header */
+    header {
+        padding-inline: 32px;
+    }
+
+    .headerNav {
+        position: fixed;
+        top: 98px;
+        left: -100%;
+        background-color: #C46A2B;
+        width: 200px;
+        height: 144px;
+        padding: 16px 0 16px 16px;
+
+    }
+
+    .headerNavList {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .burger {
+        display: block;
+    }
+}
