@@ -1,0 +1,16 @@
+@media(max-width:321px) {
+    /* header */
+    header {
+        padding-inline: 8px;
+
+    }
+
+    .homeCover {
+        height: 320px;
+    }
+
+    /* homeSection2Article */
+    .homeSection2 {
+        padding: 32px 0 32px 8px;
+    }
+}
