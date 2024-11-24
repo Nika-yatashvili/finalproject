@@ -224,6 +224,30 @@ header {
 
 }
 
+/* homeSectionArtcleHoverEffects */
+.sectionArticle {
+    transition: all 0.4s linear;
+    cursor: pointer;
+
+
+}
+
+.sectionArticle:hover {
+    box-shadow: 0px 0px 5px cyan, 0 0 10px cyan ;
+}
+
+.sectionArticle:hover .articleImage {
+    transform: scale(1.2);
+}
+
+.articleImage {
+    transition: all 0.6s linear;
+}
+
+.HomePageArticleImageDiv {
+    overflow: hidden;
+}
+
 /* footer */
 
 footer {
@@ -473,6 +497,5 @@ footer {
     line-height: 24px;
     color: #D9D9D9;
 
-    
 
 }
