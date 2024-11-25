@@ -61,4 +61,10 @@
     .displayNoneArticle {
         display: none;
     }
+
+    /* contactPage */
+
+    .contactBackgroundImageSection {
+        padding: 140px 32px;
+    }
 }

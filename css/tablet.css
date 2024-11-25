@@ -28,6 +28,36 @@
         flex-basis: 100%;
     }
 
+    /* contactPage */
+    .contactBackgroundImageSection {
+        padding: 64px 24px;
+        height: 100%
+    }
+
+    .ContactMainSection {
+        padding: 16px;
+        flex-direction: column;
+        
+        
+    }
+
+    .formSection {
+        width: 100%;
+    }
+
+    .mapSection {
+        width: 100%;
+        gap: 24px;
+    }
+
+    .mapSectionButtons {
+        gap: 42px;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
 }
 
 
@@ -135,5 +165,19 @@
 
     }
 
+    /* contactPage */ 
+    .inputSection {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .ContactMainSection {
+        gap: 48px;
+    }
+
+    .contactBackgroundImageSection {
+        padding: 64px 20px;
+
+}
 
 }
