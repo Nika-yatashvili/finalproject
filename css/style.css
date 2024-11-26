@@ -39,6 +39,15 @@ header {
     gap: 72px;
 }
 
+.headerLogo {
+    transition: 0.15s all ease-in-out;
+}
+
+.headerLogo:hover {
+    filter: drop-shadow(0px 0px 10px cyan);
+    transform: scale(1.05);
+}
+
 
 
 
@@ -50,8 +59,13 @@ header {
     line-height: 32px;
     color: #A1C3C9;
     font-family: "Inter", serif;
+    transition: 0.15s all ease-in-out;
 
 
+}
+
+.headerNavLink:hover {
+    color: #7e96a5;
 }
 
 .headerSectionButton {
@@ -65,8 +79,12 @@ header {
     border: 2px solid #05BCCA;
     border-radius: 8px;
     cursor: pointer;
+    transition: 0.15s all linear;
+}
 
-
+.headerSectionButton:hover {
+    background-color: #0b444740;
+    scale: 1.05;
 }
 
 .buttonsSection {
@@ -78,6 +96,13 @@ header {
     background-color: #05BCCA;
     border: none;
     cursor: pointer;
+    transition: 0.15s all linear;
+}
+
+.secondButton:hover {
+    background-color: #0198a2;
+    scale: 1.05;
+
 }
 
 /* homeSection1 */
@@ -92,6 +117,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    animation: slideIn 1s ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .coverInternalSection {
@@ -124,8 +151,11 @@ header {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: 0.4s all linear;
+}
 
-
+.coverButton:hover {
+    transform: translateX(5px);
 }
 
 /* section2 */
@@ -221,7 +251,13 @@ header {
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
+    transition: 0.4s all linear;
+    cursor: pointer;
+}
 
+.articleButton:hover {
+    box-shadow: 0px 0px 5px cyan, 0 0 10px cyan;
+    transform:scale(1.05) ;
 }
 
 /* homeSectionArtcleHoverEffects */
@@ -262,6 +298,14 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.footerSection li {
+    transition: 0.2s all linear;
+}
+
+.footerSection li:hover {
+    transform: scale(1.05) ;
 }
 
 
@@ -337,7 +381,16 @@ footer {
     align-items: center;
     gap: 33px;
     background-color: #A1C3C9;
+    transition: 3s all linear;
+}
 
+.bestSellingButton:hover {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(102, 102, 207, 1) 41%, rgba(0, 212, 255, 1) 100%);
+    cursor: pointer;
+}
+
+.bestSellingButton:hover .bestSelling {
+    color: #ffffff;
 }
 
 .filterSectionTitle {
@@ -365,6 +418,7 @@ footer {
     font-weight: 400;
     line-height: 24px;
     color: #2C4246;
+    transition: .4s all linear;
 
 
 }
@@ -384,8 +438,14 @@ footer {
     flex: 1 1 32%;
     display: flex;
     flex-direction: column;
+    transition: .6s all ease;
+    cursor: pointer;
 
 
+}
+
+.catalogCardArticle:hover {
+    box-shadow: 0 0 10px lightblue, 0 0 15px lightblue;
 }
 
 .catalogCardImage {
@@ -434,8 +494,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.15s all linear;
+    cursor: pointer;
 
+}
 
+.catalogCartButton:hover {
+    scale: 1.05;
+    border: 1px solid #fff;
 }
 
 /* toggleButtonSection */
@@ -457,6 +523,12 @@ footer {
     display: flex;
     align-items: center;
     gap: 16px;
+    transition: 0.2s all linear;
+    cursor: pointer;
+}
+
+.toggleButtonPrevious:hover {
+    box-shadow: 0px 0px 5px #C46A2B, 0px 0px 10px #C46A2B, 0px 0px 20px #C46A2B;
 }
 
 .toggleButtonSpanPrevious {
@@ -487,7 +559,12 @@ footer {
     display: flex;
     align-items: center;
     gap: 16px;
+    transition: 0.2s all linear;
+    cursor: pointer;
+}
 
+.toggleButtonNext:hover {
+    box-shadow: 0px 0px 5px #0198a2, 0px 0px 10px #0198a2, 0px 0px 20px #0198a2;
 }
 
 .toggleButtonSpanNext {
@@ -610,7 +687,7 @@ textarea {
     width: 0;
     border-radius: inherit;
     height: 1.7px;
-    background-color:rgb(196, 221, 221);
+    background-color: rgb(196, 221, 221);
     position: absolute;
     top: 0;
     left: 0;
@@ -669,7 +746,22 @@ iframe {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-   
-    
+    transition: 0.2s all linear;
+
+
 }
 
+.contactButton:hover {
+    box-shadow: 0 0 10px #05BCCA;
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
