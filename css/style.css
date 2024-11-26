@@ -381,7 +381,7 @@ footer {
     align-items: center;
     gap: 33px;
     background-color: #A1C3C9;
-    transition: 3s all linear;
+    
 }
 
 .bestSellingButton:hover {
